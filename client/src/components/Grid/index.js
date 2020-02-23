@@ -1,0 +1,1 @@
+//will contain components for the main display of products
