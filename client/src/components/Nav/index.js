@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import TopProducts from "../TopProducts";
 import "./style.css";
 
 class Nav extends Component {
@@ -16,17 +15,10 @@ class Nav extends Component {
                             <a class="nav-item nav-link active" id="home" href="/">| Home |<span class="sr-only">(current)</span></a>
                             <a class="nav-item nav-link active" id="cart" href="/cart">| Cart |<span></span></a>
 
-                            <div className="search-container" id="searchbar">
-                                <form action="/action_page.php">
-                                    <input type="text" placeholder="Search.." name="search">
-                                    </input><button type="submit">Submit</button>
-                                </form>
-                            </div>
+
                         </div>
                     </div>
                 </nav>
-
-                <TopProducts />
             </div>
         );
     }

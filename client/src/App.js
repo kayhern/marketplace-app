@@ -4,7 +4,7 @@ import Cart from "./pages/Cart";
 import Home from "./pages/Home";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
-// import { Container } from "./components/Grid";
+import AddItem from "./components/AddBtn";
 
 export default class App extends Component {
   render() {

@@ -1,35 +1,22 @@
-import React, { useEffect, useContext } from "react";
-import router from "/server/routes/api/products";
-import { Link } from "react-router-dom";
-import { Favorites } from "../Favorites";
+import React from "react";
+import axios from "axios";
+import "./style.css";
+///something like this??? https://www.robinwieruch.de/react-hooks-fetch-data
 
-const TopProducts = () => {
-    const data = 
-    const [dispatch] = useContext();
-    //getting top products using two hooks
-    const getTopProducts = () => {
-        dispatch({ type: router })
+function TopProducts() {
+    const displayTopProducts = (e) => {
+        axios.get("URL").then(console.log)
     };
 
-    useEffect(() => {
-        getTopProducts();
-    }, []);
-
     return (
-        <div class="jumbotron jumbotron-fluid">
-            <div class="container">
-                <h1 class="display-4">Top Products</h1>
-                {data.products.map(res => (
-                    <Favorites key={data._id}>
-                        <Link to={"/products/category" + data._id}>
-                            {data.title} by {data.seller}
-                        </Link>
-                    </Favorites>
-                ))}
+        <div id="products">
+            <h2>Top Products</h2>
 
+            <div id="productsfromAPI">
+                Products Will Display Here
             </div>
         </div>
-    );
-}
+    )
+};
 
 export default TopProducts;
