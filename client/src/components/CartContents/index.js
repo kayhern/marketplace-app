@@ -1,3 +1,8 @@
+//import removeqtybtn
+import PlusButton from "../../components/AddQtyBtn";
+import Product from "../../components/Product";
+import RemoveBtn from "../../components/RemoveBtn";
+import MinusButton from "../../components/RemoveQtyBtn";
 import React from "react";
 import Total from "../../components/Total";
 

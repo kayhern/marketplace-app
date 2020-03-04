@@ -1,3 +1,9 @@
 #searchbar {
     text-align: center !important;
+    position: inherit !important;
+}
+
+#results {
+    text-align: center !important;
+
 }

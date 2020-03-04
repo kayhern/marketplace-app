@@ -1,3 +1,4 @@
+//import product, add btn
 import React from "react";
 import "./style.css";
 
@@ -13,7 +14,14 @@ function Search() {
                     </input><button type="submit" id="searchbtn">Submit</button>
                 </form>
             </div>
+            <br></br>
+            <br></br>
+            <br></br>
+            <div id="results">
+                Search Results Render Here
+    </div>
         </div>
+
 
     );
 };

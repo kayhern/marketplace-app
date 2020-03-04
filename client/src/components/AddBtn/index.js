@@ -1,11 +1,11 @@
 //add items to cart button including onClick function
-//probably need a hook
+//probably need to import product schema?
 import React from "react";
 import axios from 'axios';
 
 function AddItem(props) {
     const handleClick = (e) => {
-        axios.get('http://localhost:3001/api/products/findAll?q=iphone').then(console.log)
+        axios.get('/api/products/findAll?q==!iphone').then(console.log)
         console.log("Adding Item to Cart");
     };
 
